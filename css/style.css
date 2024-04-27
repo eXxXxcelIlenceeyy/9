@@ -1,0 +1,128 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --third-family: "Roboto", sans-serif;
+
+    --default-black: #000;
+    --default-white: #fff;
+    --transparent: rgb(255 255 255 / 0%);
+    --persian-red: #ce3829;
+    --dark-red: #a32c21;
+    --endeavour: #19619f;
+    --picton-blue: #3d95e1;
+    --terra-cotta: rgb(238 107 94);
+    --gallery: #dfd8d1;
+    --lynch: #6a767f;
+    --cloudy: #a8a29c;
+    --night-rider: #2f2f2f;
+    --seashell: #fbf8f6;
+    --sea-green: #219653;
+    --midnight: #142b4f;
+    --error-color: #f00;
+    --athens-gray: #edeef2;
+    --gray: #455672;
+    --main-background: var(--gallery);
+    --main-dark-background: var(--midnight);
+    --header-filled-bottom-border-color: #829eba;
+    --logo-border-color: #164677;
+    --black-to-right: linear-gradient(90deg, rgb(0 0 0 / 75%) 0%, rgb(0 0 0 / 0%) 75%);
+    --font-family-prata: "Prata", "Times", serif;
+    --font-family-noto: "Noto Sans", "Arial", sans-serif;
+    --font-family-source: "Source Code Pro", "Arial", sans-serif;
+    --transform-scale: scale(1.1);
+    --transform-translate: translateY(-10px);
+    --default-transition-settings: .3s ease;
+    --max-width: 1920px;
+    --retina-dpi: 144dpi;
+    --retina-dppx: 1.5dppx;
+    --modal-transition-settings: .6s cubic-bezier(.55, 0, .1, 1);
+    --content-side-padding: 60px;
+    --header-height: 115px;
+    --card-border-radius: 0 0 10px 10px;
+    --card-shadow: 0 20px 20px 0 #6a595926;
+    --shadow: 0 11px 7px 0 #6a595926;
+    --page-top-padding: 216px;
+    --page-bottom-padding: 60px;
+    --page-padding: var(--page-top-padding) var(--content-side-padding) var(--page-bottom-padding);
+    --modal-background: rgb(20 43 79 / 95%);
+    --running-string-height: 80px;
+    --tablet-max-width-breakpoint: 1300px;
+    --grid-cards: repeat(3, 1fr);
+    --root-section-grid-cards: repeat(3, 1fr);
+    --article-top-padding: 265px;
+    --root-section-title: 140px;
+    --fun-green: #186c3c;
+    --max-large-root-section-height: calc(100vh - var(--header-height));
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header {}
+
+.header_logo-wrap {
+    background-color: var(--midnight);
+    display: inline-block;
+}
+
+.header__logo {}
+
+.active {}
+
+.main {}
+
+.hero {
+    position: relative;
+
+}
+
+.hero__content {}
+
+.hero__desc {}
+
+.title {
+    max-width: 1000px;
+    font-size: 150px;
+}
+
+.text {}
