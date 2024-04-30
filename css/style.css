@@ -1,8 +1,4 @@
 :root {
-    --font-family: "Poppins", sans-serif;
-    --second-family: "Inter", sans-serif;
-    --third-family: "Roboto", sans-serif;
-
     --default-black: #000;
     --default-white: #fff;
     --transparent: rgb(255 255 255 / 0%);
@@ -53,19 +49,30 @@
     --root-section-title: 140px;
     --fun-green: #186c3c;
     --max-large-root-section-height: calc(100vh - var(--header-height));
+    --max-medium-root-section-height: calc(100vh - var(--header-height));
+    --h2-title-font-size: 70px;
+    --h3-title-font-size: 46px;
+    --h4-title-font-size: 26px;
+    --live-widget-year-color: #f09f26;
+    --loading-background: rgb(255 255 255 / 50%);
+    --p-font: normal normal 400 20px/28px Noto Sans;
+    --ps-font: normal normal 400 20px/24px Noto Sans;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html,
-body {
-    height: 100%;
+a {
+    text-decoration: none;
 }
 
-img {
-    max-width: 100%;
+ul,
+li {
+    list-style: none;
+    color: inherit;
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -73,56 +80,206 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+img {
+    max-width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+html,
+body {
+    height: 100%;
+    margin: 0;
 }
 
 .wrapper {
     min-height: 100%;
     overflow: hidden;
+    --font-family: "Georgia", sans-serif;
 }
-
-.container {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-.header {}
-
-.header_logo-wrap {
-    background-color: var(--midnight);
-    display: inline-block;
-}
-
-.header__logo {}
-
-.active {}
-
-.main {}
 
 .hero {
     position: relative;
-
+    background-color: var(--main-background);
+    z-index: 1;
+    min-height: 100vh;
 }
 
-.hero__content {}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-.hero__desc {}
+.hero__container {
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    display: inline-block;
+    background-color: var(--midnight);
+    border: 1px solid var(--logo-border-color);
+    padding: 25px 29px;
+    max-height: 162px;
+}
+
+
+.nav {
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    height: 162px;
+}
+
+.nav__item {
+}
+
+.nav__link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--midnight);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    white-space: nowrap;
+    transition: color var(--default-transition-settings);
+    transition-delay: 100ms;
+}
+
+.nav__link:hover {
+    color: var(--persian-red);
+}
+
+.hero__content {
+    position: relative;
+}
+
+.hero__desc {
+    font-weight: 400;
+    letter-spacing: -.02em;
+    margin-bottom: 20px;
+    padding-left: 143.19px;
+}
 
 .title {
-    max-width: 1000px;
     font-size: 150px;
+    font-weight: 400;
+    font-family: var(--font-family-prata);
 }
 
-.text {}
+.title__span {
+    display: block;
+    transform: translateX(350px);
+}
+
+.desc__foot {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+.hero__btn-wrap {
+}
+
+.btn {
+}
+
+.hero__btn {
+}
+
+.paragraph {
+}
+
+.hero__paragraph {
+}
+
+.label {
+}
+
+.hero__label {
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    background-color: var(--persian-red);
+    color: var(--default-white);
+    padding: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    z-index: -1;
+}
+
+.label__paragraph {
+    transform: rotate(-15deg);
+}
+
+.hero__img-wrap1 {
+    position: absolute;
+    top: 200px;
+    left: -300px;
+
+    width: 450px;
+    opacity: 0.5;
+    transform: rotate(10deg);
+}
+
+
+.hero__img-wrap2 {
+    position: absolute;
+    top: -70px;
+    left: 600px;
+    z-index: -1;
+
+    width: 250px;
+    opacity: 0.5;
+    transform: rotate(-10deg);
+}
+
+.hero__img-wrap3 {
+    position: absolute;
+    top: -70px;
+    left: 800px;
+    z-index: -1;
+
+    width: 200px;
+    transform: rotate(7deg);
+}
+
+.hero__img-wrap4 {
+    position: absolute;
+    top: 100px;
+    right: -500px;
+    z-index: -1;
+
+    width: 400px;
+    opacity: 0.5;
+    transform: rotate(7deg);
+}
+
+.hero__img-wrap5 {
+    /* position: absolute;
+    top: 120px;
+    left: -500px;
+    z-index: -1;
+    
+    width: 400px;
+    opacity: 0.5;
+    transform: rotate(-7deg); */
+}
+
+.hero__img {
+}
